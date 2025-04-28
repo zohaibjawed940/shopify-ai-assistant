@@ -71,12 +71,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Set up event source for streaming
         // TODO: Make this dynamic, maybe via app proxy?
-        const streamUrl = `https://roll-higher-index-calculated.trycloudflare.com/api/stream`;
+        const streamUrl = `/apps/chat/chat`;
 
         const response = await fetch(streamUrl, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
+            'Accept': 'text/event-stream',
           },
           body: requestBody
         });
@@ -116,6 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
                   sessionStorage.setItem('shopAiConversationId', conversationId);
                 }
                 else if (data.type === 'chunk') {
+                  console.log('chunk', data.chunk);
                   // Append text chunk to message
                   messageElement.textContent += data.chunk;
 
