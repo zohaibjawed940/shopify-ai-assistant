@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "a840674b47a51a88151b77b53ed7bece"
+name = "shop-chat-agent-v2"
+handle = "shop-chat-agent-v2"
+application_url = "https://localhost:53406"
+embedded = true
+
+[build]
+include_config_on_deploy = true
+automatically_update_urls_on_dev = true
+
+[webhooks]
+api_version = "2025-04"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [
+  "https://localhost:53406/auth/callback",
+  "https://localhost:53406/auth/shopify/callback",
+  "https://localhost:53406/api/auth/callback"
+]
+
+[pos]
+embedded = false
