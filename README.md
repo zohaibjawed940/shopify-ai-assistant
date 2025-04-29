@@ -49,6 +49,12 @@ This app consists of two main components:
      CLAUDE_API_KEY=your_claude_api_key
      ```
 
+### Deploy Your App
+
+```shell
+shopify app deploy
+```
+
 ### Development
 
 Start the development server:
@@ -61,6 +67,14 @@ This will:
 - Start Remix in development mode
 - Tunnel the local server to make it accessible by Shopify
 - Provide a URL to install the app on your development store
+
+### Install The App
+
+Head to the url provided in your shell to install the app on your demo store
+
+### Enable Chat Extension
+
+Enable the chat extension from theme editor (Online store > Themes > Customize > App embeds)
 
 ## Chat Interface
 
