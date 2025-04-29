@@ -143,7 +143,6 @@ async function handleChatRequest(request) {
 
           // Store updated conversation history
           conversations.set(newConversationId, conversationHistory);
-          console.log('conversationHistory', conversationHistory);
 
           // Send a completion message
           sendMessage({ type: 'done' });

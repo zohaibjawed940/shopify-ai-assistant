@@ -1,6 +1,3 @@
-import dotenv from 'dotenv';
-dotenv.config();
-
 class MCPClient {
     constructor(hostUrl) {
       this.tools = [];
