@@ -17,7 +17,7 @@
     "prisma": "prisma",
     "graphql-codegen": "graphql-codegen",
     "vite": "vite",
-    "postinstall": "prisma generate"
+    "postinstall": "echo running prisma generate && prisma generate"
   },
   "type": "module",
   "engines": {
@@ -43,6 +43,7 @@
     "dotenv": "^16.3.1"
   },
   "devDependencies": {
+    "prisma": "^6.2.1",
     "@remix-run/eslint-config": "^2.16.1",
     "@remix-run/route-config": "^2.16.1",
     "@shopify/api-codegen-preset": "^1.1.1",
