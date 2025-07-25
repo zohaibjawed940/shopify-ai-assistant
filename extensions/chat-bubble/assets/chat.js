@@ -481,7 +481,7 @@
             prompt_type: promptType
           });
 
-          const streamUrl = 'https://you-submit-deborah-gi.trycloudflare.com/';
+          const streamUrl = 'https://tons-diameter-charity-leasing.trycloudflare.com/';
           const shopId = window.shopId;
 
           const response = await fetch(streamUrl, {
@@ -629,8 +629,8 @@
           loadingMessage.textContent = "Loading conversation history...";
           messagesContainer.appendChild(loadingMessage);
 
-          // Fetch history from the server
-          const historyUrl = `https://you-submit-deborah-gi.trycloudflare.com/chat?history=true&conversation_id=${encodeURIComponent(conversationId)}`;
+          // Fetch history from the servertons
+          const historyUrl = `https://tons-diameter-charity-leasing.trycloudflare.com//chat?history=true&conversation_id=${encodeURIComponent(conversationId)}`;
           console.log('Fetching history from:', historyUrl);
 
           const response = await fetch(historyUrl, {
@@ -779,7 +779,7 @@
           attemptCount++;
 
           try {
-            const tokenUrl = 'https://you-submit-deborah-gi.trycloudflare.com/auth/token-status?conversation_id=' +
+            const tokenUrl = 'https://tons-diameter-charity-leasing.trycloudflare.com/auth/token-status?conversation_id=' +
               encodeURIComponent(conversationId);
             const response = await fetch(tokenUrl);
 

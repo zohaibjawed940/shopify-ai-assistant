@@ -3,7 +3,7 @@
 client_id = "38a206edf49e32426fc9f2d464ac9fe7"
 name = "shop-chat-agent"
 handle = "shop-chat-agent-715"
-application_url = "https://you-submit-deborah-gi.trycloudflare.com"
+application_url = "https://mh-destinations-psp-hills.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,7 +17,7 @@ api_version = "2025-07"
 scopes = "read_customers,write_customers,read_orders,write_orders,read_products,write_products,read_content,unauthenticated_read_product_listings,unauthenticated_read_customers,unauthenticated_write_checkouts,unauthenticated_read_checkouts,write_discounts,read_discounts"
 
 [auth]
-redirect_urls = ["https://you-submit-deborah-gi.trycloudflare.com/auth/callback", "https://you-submit-deborah-gi.trycloudflare.com/auth/shopify/callback", "https://you-submit-deborah-gi.trycloudflare.com/api/auth/callback"]
+redirect_urls = ["https://mh-destinations-psp-hills.trycloudflare.com/auth/callback", "https://mh-destinations-psp-hills.trycloudflare.com/auth/shopify/callback", "https://mh-destinations-psp-hills.trycloudflare.com/api/auth/callback"]
 
 [pos]
 embedded = false
