@@ -10,6 +10,7 @@ import { createSseStream } from "../services/streaming.server";
 import { createClaudeService } from "../services/claude.server";
 import { createToolService } from "../services/tool.server";
 import { unauthenticated } from "../shopify.server";
+import { callOpenRouter } from "../services/openrouter.server";
 
 
 /**
@@ -128,7 +129,8 @@ async function handleChatSession({
   stream
 }) {
   // Initialize services
-  const claudeService = createClaudeService();
+  const openRouterService = callOpenRouter()
+  // const claudeService = createClaudeService();
   const toolService = createToolService();
 
   // Initialize MCP client
@@ -314,7 +316,7 @@ async function getCustomerMcpEndpoint(shopDomain, conversationId) {
       `#graphql
       query shop {
         shop {
-          customerAccountUrl
+          customerAccounts
         }
       }`,
     );
