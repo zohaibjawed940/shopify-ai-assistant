@@ -16,20 +16,18 @@ datasource db {
 }
 
 model Session {
-  id           String   @id
-  shop         String
-  state        String?
-  isOnline     Boolean
-  scope        String?
-  accessToken  String
-  expires      DateTime?
-  userId       BigInt?
-  sessionToken String?
-
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
+  id            String   @id
+  shop          String
+  state         String?
+  isOnline      Boolean
+  scope         String
+  expires       DateTime?
+  accessToken   String
+  userId        String?
+  sessionToken  String? 
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
 }
-
 
 model CustomerToken {
   id              String    @id
