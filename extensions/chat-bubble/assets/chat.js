@@ -481,7 +481,7 @@
             prompt_type: promptType
           });
 
-          const streamUrl = 'https://shopify-ai-assistant-snowy.vercel.app/';
+          const streamUrl = '/api/token.ts';
           const shopId = window.shopId;
 
           const response = await fetch(streamUrl, {
