@@ -95,7 +95,8 @@ async function handleChatRequest(request) {
         userMessage,
         conversationId,
         promptType,
-        stream
+        stream,
+        model
       });
     });
 
