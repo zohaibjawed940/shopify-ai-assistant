@@ -6,7 +6,7 @@
 export const AppConfig = {
   // API Configuration
   api: {
-    defaultModel: 'mistralai/mistral-7b-instruct',
+    defaultModel: 'mistralai/mistral-small-3.2-24b-instruct:free',
     maxTokens: 2000,
     defaultPromptType: 'standardAssistant',
   },
