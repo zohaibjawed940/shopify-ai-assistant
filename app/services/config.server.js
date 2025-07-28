@@ -19,7 +19,7 @@ export const AppConfig = {
     apiKeyError: "Please check your API key in environment variables",
     rateLimitExceeded: "Rate limit exceeded",
     rateLimitDetails: "Please try again later",
-    genericError: "Failed to get response from Claude"
+    genericError: "Failed to get response from Your API"
   },
 
   // Tool Configuration
