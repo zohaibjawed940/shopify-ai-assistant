@@ -481,7 +481,7 @@
             prompt_type: promptType
           });
 
-          const streamUrl = '/api/token.ts';
+          const streamUrl = '/api/token';
           const shopId = window.shopId;
 
           const response = await fetch(streamUrl, {
