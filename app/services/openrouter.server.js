@@ -6,7 +6,7 @@ export async function callOpenRouter(messages, tools) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: 'mistralai/mistral-7b-instruct', // or any other model
+        model: 'mistralai/mistral-small-3.2-24b-instruct:free', // or any other model
         messages,
         tools,
         tool_choice: 'auto',
